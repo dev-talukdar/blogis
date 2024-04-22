@@ -1,18 +1,19 @@
+import { Blog } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillLike } from "react-icons/ai";
 import { FaCalendar } from "react-icons/fa";
 
-const LatestBlogCard = ({ blog }) => {
+const LatestBlogCard = ({ blog }: { blog: Blog }) => {
   return (
     <div key={blog.id} className="card w-full bg-base-100 shadow-xl">
       <figure>
         <Image
           src={blog.blog_image}
-          width={600}
-          height={100}
+          width={1000}
+          height={800}
           alt="blog image"
-          className="rounded-xl h-96"
+          className="rounded-xl w-full h-96"
         />
       </figure>
       <div className="card-body">
