@@ -1,4 +1,5 @@
 import LatestBlogs from "@/components/latestBlogs/LatestBlogs";
+import Image from "next/image";
 
 const HomePage = async () => {
   const res = await fetch("http://localhost:5000/blogs", {

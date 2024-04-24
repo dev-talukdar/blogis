@@ -5,12 +5,6 @@ import { Blog } from "@/types";
 import React from "react";
 
 const BlogPages = () => {
-  // const res = await fetch("http://localhost:5000/blogs", {
-  //   cache: "no-store",
-  // });
-  // const blogs = await res.json();
-  // console.log(blogs);
-
   const { data: blogs, isLoading, isError, error } = useGetBlogsQuery("");
 
   return (
